@@ -1,0 +1,37 @@
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+  }
+  
+  #container {
+    display: grid;
+    /* grid-gap: 1em; */
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    border: 5px solid black;
+    width: 800px;
+    margin-top: 100px;
+  }
+  
+  .grid-item {
+    padding: 1em;
+    border: 1px solid black;
+    text-align: center;
+  }
+
+  .hover{
+    background-color: black;
+  }
+  button {
+    border-radius: 25px;
+   margin-top: 50px;
+   width: 500px;
+   background-color: rgb(167, 115, 39);
+   margin-left: 100px;
+  }
+
+  body{
+    margin: auto;
+    max-width: 1000px;
+    /* flex-direction: row; */
+  }
